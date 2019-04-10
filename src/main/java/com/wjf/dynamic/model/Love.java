@@ -11,6 +11,7 @@ public class Love {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     Date createDate;
     Integer type;
+    Date updateDate;
 
     public Integer getId() {
         return id;
@@ -50,5 +51,13 @@ public class Love {
 
     public void setType(Integer type) {
         this.type = type;
+    }
+
+    public Date getUpdateDate() {
+        return updateDate;
+    }
+
+    public void setUpdateDate(Date updateDate) {
+        this.updateDate = updateDate;
     }
 }
